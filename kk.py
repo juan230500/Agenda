@@ -8,7 +8,7 @@ def write():
     while 1:
         InTarea=input("Tarea= ")
         if (InTarea=="f"): break
-        InHora=int(input("Horas= "))
+        InHora=float(input("Horas= "))
         InMult=int(input("Multiplicidad= "))
         Tareas.append([InTarea,InHora,InMult])
         print()
@@ -63,7 +63,7 @@ def new():
     Dias={"0":[],"1":[],"2":[],"3":[],"4":[],"5":[],"6":[]}
     Fijo=[0,0,0,0,0,0,0]
 
-def getFijo(i):
+def getF(i=0):
     with open(str(i)+'.json') as f:
         Dic = json.load(f)
     for j in range(7):
