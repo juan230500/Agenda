@@ -1,7 +1,22 @@
 import json
+
 Semana=["Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"]
 Dias={"0":[],"1":[],"2":[],"3":[],"4":[],"5":[],"6":[]}
 Fijo=[0,0,0,0,0,0,0]
+
+class Evento:
+  def __init__(self ):
+      pass
+
+  def __init__(self, Nombre, Duracion, Dia, Hora):
+    self.Nombre = Nombre
+    self.Duracion = Duracion
+    self.Dia = Dia
+    self.Hora = Hora
+
+  def show(self):
+    print("Hello my name is "
+          + self.Nombre)
 
 def write():
     Tareas=[]
