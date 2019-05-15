@@ -7,10 +7,8 @@ class Movile():
         print("Incio",self.rootx,self.rooty)
 
     def on_drag(self,event):
-        dx=event.x-self.x
-        dy=event.y-self.y
-        self.rootx+=dx
-        self.rooty+=dy
+        self.rootx+=event.x-self.x
+        self.rooty+=event.y-self.y
         self.widget.place(x=self.rootx,y=self.rooty)
 
     def on_drop(self,event):
